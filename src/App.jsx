@@ -63,33 +63,30 @@ class App extends React.Component{
                         <br/><br/><br/>
                         <div className="list">
                             <br/>
-                            <ul>
+                            
                                 {this.state.list.map(item =>{
                                     return(
-                                      
+                                      <ul>
                                         <  li key={item.id}>
-                                             
+                                         
                                            <input type="checkbox" 
                                            name="idDone"
                                            checked={item.isDone}
                                            onChange={()=>{}}
                                            />
                                            {item.value}
-                                           <button 
+                                           &nbsp;&nbsp;&nbsp;<button 
                                            className="btn"
-                                           onClick={()=>this.deleteItem(item.id)}>Delete</button>
-                                            
+                                           onClick={()=>this.deleteItem(item.id)}> Delete</button>
+                                        
                                         </li>
+                                        <br/>
+                                     </ul>
                                         
                                     );
                                 })}
-                                
-                                <li><br/>
-                                    <input type="checkbox" name="" id=""/>
-                                Learn BootStrap
-                                <button className="btn" >Delete</button>
-                                </li>
-                                </ul>
+                               
+                              
                                 </div>                                                                              
                 </div>
             </div>

@@ -197,8 +197,9 @@ h1 {
 .btn {
     position: absolute;
     align-self: auto;
+    text-align: center;
     background-color: transparent;
-    border: 2px solid #4CAF50;
+    border: transparent;
     margin: auto;
     size: 15px;
     padding: 5px 11px;
